@@ -1,4 +1,5 @@
-# This program is a fill-in-the blank quiz, accepting user input for blanks in the order they appear.
+#!/usr/bin/env python
+# This program is a fill-in-the blank quiz, prompting for user input at each blank.
 
 import os
 
