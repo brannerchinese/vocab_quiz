@@ -4,7 +4,7 @@
 import os
 
 #These variables contain quiz questions and answers for each difficulty level
-easy_questions = ["___1___ is a popular programming language that boasts high-readability code. You might think it was named after a snake species, but it was actually named after a British comedy act.", "The python interpreter can interpret and manipulate various types of data. A whole number is referred to as an ___2___, while a decimal is known as a float. ", "Another data type called a ___3___. It can contain letters, words, sentences, or other characters saved as text. ", "Another useful data type in python is a ___4___, which stores a sequence of values separated by commas."]
+easy_questions = ["___1___ is a popular programming language that boasts high-readability code. You might think it was named after a snake species, but it was actually named after a British comedy act.", "The python interpreter can interpret and manipulate various types of data. A whole number is referred to as an ___2___, while a decimal is known as a float. ", "Another data type is called a ___3___. It can contain letters, words, sentences, or other characters saved as text. ", "Another useful data type in python is a ___4___, which stores a sequence of values separated by commas."]
 easy_answers = ["python", "integer", "string", "list"]
 
 
@@ -30,10 +30,11 @@ def replace_blank(index, question, correct_answer):
 
 def quiz_summary(errors):
 #print out a final message at the end of the quiz
-        accuracy = (str(4.0/(errors + 4) * 100))[:2]
-        print "\nCongratulations! You survived the quiz. Your accurracy was " + accuracy + " percent.\n"
+        accuracy = '{0:.2f}'.format(4.0/(errors + 4) * 100)
+        print "{} {} {}".format("\nCongratulations! You survived the quiz. Your accurracy was", 
+                accuracy, "percent.\n")
         last_input = raw_input("How was your experience? ")
-        print "\nGlad to hear it was " + last_input.lower() + ". See you later!"
+        print "{} {} {}".format("\nGlad to hear it was", last_input.lower(), ". See you later!")
 
 def clear_terminal():
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -59,7 +60,7 @@ def run_quiz():
         clear_terminal()
 
         while index < 4:
-                print "Question " + str(index + 1) + "\n\n" + questions[index]
+                print "{0} {1} {2}{2}{3}".format("Question", str(index + 1), "\n", questions[index])
 
                 #appropriate prompt for response printed based on index
                 user_input = raw_input("\nType the answer for question " + str(index + 1) + ": ")
