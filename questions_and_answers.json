@@ -1,0 +1,46 @@
+{
+  "easy": [
+    {"question": "___1___ is a popular programming language that boasts high-readability code. You might think it was named after a snake species, but it was actually named after a British comedy act.",
+    "answer": "python"
+    },
+    {"question": "The python interpreter can interpret and manipulate various types of data. A whole number is referred to as an ___2___, while a decimal is known as a float. ",
+    "answer": "integer"
+    },
+    {"question": "Another data type is called a ___3___. It can contain letters, words, sentences, or other characters saved as text.",
+    "answer": "string"
+    },
+    {"question": "Another useful data type in python is a ___4___, which stores a sequence of values separated by commas.",
+    "answer": "list"
+    }
+  ],
+
+  "medium": [
+    {"question": "One of the first steps when learning to code is to learn how to assign a value to a ___1___, which then stores that value in the computer's memory.",
+    "answer": "variable"
+    },
+    {"question": "Next you will probably want to learn how to use simple ___2___s such as +, -, *, /, >, <, ==, and !=.",
+    "answer": "operator"
+    },
+    {"question": "Once you've mastered variables and operators, it's time to start learning how to write some simple ___3___s (aka functions), which consist of lines of code that run in a specified order and can eliminate redundancy.",
+    "answer": "procedure"
+    },
+    {"question": "A procedure takes one or more ___4___s as arguments, and returns one or more outputs.",
+    "answer": "input"
+    }
+  ],
+
+  "hard": [
+    {"question": "One important programming construct is called an ___1___ statement; it tests whether a condition is true, and if so it may execute a block of code.",
+"answer": "if"
+    },
+    {"question": "Another important construct used especially when writing procedures is a ___2___, which allows you to keep running the same code repeatedly under specified conditions.",
+"answer": "loop"
+    },
+    {"question": "There are two common types of these repeating operations; one is called a ___3___ loop; it runs through all of the values in a specified range.",
+"answer": "for"
+    },
+    {"question": "The other is called a ___4___ loop; this one runs repeatedly as long as a specified condition is true.",
+"answer": "while"
+    }
+  ]
+}
